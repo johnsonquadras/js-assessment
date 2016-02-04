@@ -11,7 +11,7 @@ exports.flowControlAnswers = {
     // otherwise the function should return the number, or false if no number
     // was provided or the value provided is not a number
 
-    if(_isNumber(num)) {
+    if(!_.isNumber(num)) {
         return false;
     }
 
@@ -22,7 +22,7 @@ exports.flowControlAnswers = {
     } else if( num % 3 == 0) {
         return "fizz";
     }
-    return false;
 
+    return num;
   }
 };
